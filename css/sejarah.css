@@ -1,0 +1,604 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  /* navbar */
+  .navbar-container .opening-web {
+    padding: 50px;
+    background-image: url("../assets/opening-web.png");
+    height: 267px;
+    color: red;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: 0 2px 4px #00000042;
+  }
+
+  .navbar-container .opening-web h1 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    margin: 0;
+    padding-top: 47px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-container .opening-web p {
+    font-size: 18px;
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 650px;
+    margin: auto;
+    line-height: 30px;
+  }
+
+  nav{
+    padding: 2px 0;
+    display: flex;
+    background-color: red;
+    color: white;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    width: 65%;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 999px;
+    font-weight: 700;
+    font-family: "Kurale", serif;
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    background-color: white;
+    color: red;
+    width: 110px;
+    padding: 15px;
+  }
+  
+  /* Tombol menu*/
+  .menu-toggle {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+  }
+
+  .menu-toggle input {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    opacity: 0;
+    left: -4px;
+    top: -7px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+  /* Tombol menu end*/
+
+  /* animasi tombol menu */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+  }
+  /* animasi tombol menu end*/
+
+  /* navbar end*/
+
+  /* main */
+  main {
+    padding: 40px;
+    display: flex;
+  }
+
+  #content {
+    flex: 4;
+    display: flex;
+    gap: 1rem 1.5rem;
+    margin: 10px 60px 20px 60px;
+  }
+  .card {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.296);
+    flex-flow: column nowrap;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  #sejarah {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  #sejarah  h1, h2 {
+    font-family: "Spectral", serif;
+    color: #A0153E;
+  }
+
+  #sejarah h2 {
+    font-size: 27px;
+  }
+
+  #sejarah p {
+    font-family: "Spectral", serif;
+  }
+
+  .judul-utama {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+  }
+
+  .kemerdekaan-img img{
+    width: 90%;
+    padding-left: 65px;
+    border-radius: 6px;
+  }
+
+  .kemerdekaan-img p {
+    font-style: italic;
+    text-align: center;
+    color: grey;
+  }
+
+  .section-sejarah ul {
+    font-family: "Spectral", serif;
+  }
+
+  /* aside */
+  aside {
+    flex: 1.8;
+    max-height: 590px;
+    border: 1px solid rgba(212, 209, 209, 0.697);
+    font-size: 13px;
+  }
+
+  aside header h2 {
+    font-family: "Spectral", serif;
+    text-align: center;
+  }
+
+  figure img {
+    max-width: 150px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  }
+
+  figure figcaption {
+    font-family: "Spectral", serif;
+    text-align: center;
+  }
+
+  section h3 {
+    font-family: "Spectral", serif;
+    text-align: center;
+  }
+
+  section table {
+    font-family: "Spectral", serif;
+  }
+
+  section table th {
+    text-align: left;
+  }
+  /* aside end */
+  /* main end */
+
+/* footer */
+  footer {
+    background-color: black;
+    color: white;
+    font-family: "Spectral", serif;
+    text-align: center;
+    padding: 30px;
+  }
+/* footer */
+
+/* responsive */
+
+/* ukuran tablet */
+@media screen and (max-width: 1400px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* navbar */
+  .navbar-container .opening-web {
+    line-height: 35px;
+    height: 300px;
+    background-image: url(../assets/bg-tablet.png);
+  }
+
+  .navbar-container .opening-web h1{
+    font-size: 28px;
+  }
+
+  .navbar-container .opening-web p {
+    font-size: 100%;
+    line-height: 20px;
+    max-width: 400px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  nav ul {
+    width: 70%;
+  }
+  /* navbar end */
+
+  /* main */
+  main {
+    padding: 15px;
+  }
+
+  #content {
+    flex-direction: column;
+    margin: 20px 60px;
+  }
+
+  .card .judul-utama {
+    font-size: 28px;
+  }
+
+  .kemerdekaan-img img {
+    width: 90%;
+    justify-self: center;
+  }
+
+  .kemerdekaan-img p {
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  #sejarah h2 {
+    font-size: 24px;
+  }
+  
+  #sejarah.card {
+    padding: 20px 30px;
+  }
+
+  .section-sejarah ul {
+    font-size: 13px;
+    font-family: "Spectral", serif;
+  }
+
+  /* aside */
+  aside figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure img {
+    max-width: 150px;
+  }
+
+  figure figcaption {
+    padding-top: 20px;
+  }
+
+  section table {
+    padding-left: 60px;
+  }
+
+  section table td {
+    padding-left: 40px;
+  }
+  /* aside end */
+
+  /* footer */
+  footer {
+    height: 80px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+  /* footer end */
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  /* navbar */
+  .navbar-container .opening-web {
+    line-height: 35px;
+    height: 300px;
+    background-image: url(../assets/bg-mobile.png);
+  }
+  .navbar-container .opening-web h1{
+    font-size: 25px;
+  }
+
+  .navbar-container .opening-web p {
+    font-size: 80%;
+    line-height: 20px;
+    max-width: 230px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    height: 90vh;
+    width: 60%;
+    flex-direction: column;
+    background-color: red;
+    opacity: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    padding-top: 70px;
+    padding-left: 0;
+    font-size: 20px;
+    right: -100%;
+    transition: all 1s;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    right: 0%;
+  }
+
+  nav ul li a:hover {
+    border-radius: 40px;
+  }
+  /* navbar end */
+
+  /* main */
+  main {
+    padding: 15px;
+  }
+
+  #content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    flex-grow: 2;
+  }
+
+  .card .judul-utama {
+    font-size: 28px;
+  }
+
+  .kemerdekaan-img img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .kemerdekaan-img p {
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #sejarah h2 {
+    font-size: 22px;
+  }
+  
+  #sejarah.card {
+    padding: 20px 30px;
+  }
+
+  .section-sejarah ul {
+    font-size: 12px;
+    font-family: "Spectral", serif;
+  }
+
+  /* aside */
+  aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure figcaption {
+    padding-top: 10px;
+  }
+
+  section table {
+    padding-left: 40px;
+  }
+
+  section table td {
+    padding-left: 20px;
+  }
+  /* aside end */
+
+  /* footer */
+  footer p{
+    align-self: center;
+    font-size: 12px;
+  }
+  /* footer */
+}
+
+
+@media screen and (max-width: 375px) {
+  /* navbar */
+  .navbar-container .opening-web {
+    line-height: 30px;
+    height: 300px;
+    background-image: url(../assets/bg-mobile-m.png);
+  }
+  .navbar-container .opening-web h1{
+    font-size: 23px;
+  }
+
+  .navbar-container .opening-web p {
+    font-size: 70%;
+    line-height: 18px;
+    max-width: 200px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    height: 90vh;
+    width: 60%;
+    flex-direction: column;
+    background-color: red;
+    opacity: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    padding-top: 70px;
+    padding-left: 0;
+    font-size: 17px;
+    right: -100%;
+    transition: all 1s;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    right: 0%;
+  }
+
+  nav ul li a:hover {
+    border-radius: 40px;
+  }
+  /* navbar end */
+
+  /* main */
+  main {
+    padding: 15px;
+  }
+
+  #content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    flex-grow: 2;
+  }
+
+  .card .judul-utama {
+    font-size: 25px;
+  }
+
+  .kemerdekaan-img img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .kemerdekaan-img p {
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #sejarah h2 {
+    font-size: 22px;
+  }
+  
+  #sejarah.card {
+    padding: 20px 30px;
+  }
+
+  .section-sejarah ul {
+    font-size: 12px;
+    font-family: "Spectral", serif;
+  }
+
+  /* aside */
+  aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure figcaption {
+    padding-top: 10px;
+  }
+
+  section table {
+    padding-left: 20px;
+  }
+
+  section table td {
+    padding-left: 12px;
+  }
+  /* aside end */
+  /* main end */
+
+  /* footer */
+  footer p{
+    align-self: center;
+    font-size: 12px;
+  }
+  /* footer end */
+}
+
+/* responsive end */
