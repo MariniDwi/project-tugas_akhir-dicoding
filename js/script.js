@@ -25,8 +25,3 @@ document.addEventListener('click', function(event) {
       }
   });
 
- window.addEventListener('load', function() {
-    const checkbox = document.querySelector('menu-toggle input');
-    checkbox.checked = false;
-    nav.classList.remove('slide');
-});

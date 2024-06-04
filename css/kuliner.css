@@ -446,9 +446,6 @@
 
 
   /* aside */
-  aside {
-    font-size: 15px;
-  }
   aside figure {
     display: flex;
     flex-direction: column;
@@ -461,6 +458,7 @@
 
   section table {
     padding-left: 40px;
+    font-size: 12px;
   }
 
   section table td {

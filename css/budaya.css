@@ -462,6 +462,7 @@
 
   section table {
     padding-left: 40px;
+    font-size: 12px;
   }
 
   section table td {
@@ -585,7 +586,8 @@
   }
 
   section table {
-    padding-left: 20px;
+    padding-left: 40px;
+    font-size: 12px;
   }
 
   section table td {
