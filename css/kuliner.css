@@ -262,6 +262,7 @@
 
   .navbar-container .opening-web p {
     font-size: 100%;
+    font-weight: 500;
     line-height: 20px;
     max-width: 400px;
   }
@@ -294,17 +295,17 @@
   }
 
   .kuliner-img p {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
   }
 
   .card p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
   }
 
   #kuliner h2 {
-    font-size: 24px;
+    font-size: 25px;
   }
   
   #kuliner.card {
@@ -313,6 +314,9 @@
 
 
   /* aside */
+  aside {
+    font-size: 16px;
+  }
   aside figure{
     display: flex;
     flex-direction: column;
@@ -342,6 +346,7 @@
   }
 
   footer p {
+    font-size: 16px;
     margin: 0;
   }
   /* footer end */
@@ -361,6 +366,7 @@
 
   .navbar-container .opening-web p {
     font-size: 80%;
+    font-weight: 500;
     line-height: 20px;
     max-width: 230px;
   }
@@ -421,17 +427,17 @@
   }
 
   .kuliner-img p {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
   }
 
   .card p {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
   }
 
   #kuliner h2 {
-    font-size: 22px;
+    font-size: 24.5px;
   }
   
   #kuliner.card {
@@ -440,6 +446,9 @@
 
 
   /* aside */
+  aside {
+    font-size: 15px;
+  }
   aside figure {
     display: flex;
     flex-direction: column;
@@ -462,7 +471,7 @@
   /* footer */
   footer p{
     align-self: center;
-    font-size: 12px;
+    font-size: 15px;
   }
   /* footer */
 }
@@ -481,6 +490,7 @@
 
   .navbar-container .opening-web p {
     font-size: 70%;
+    font-weight: 500;
     line-height: 18px;
     max-width: 200px;
   }
@@ -541,17 +551,17 @@
   }
 
   .kuliner-img p {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
   }
 
   .card p {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
   }
 
   #kuliner h2 {
-    font-size: 22px;
+    font-size: 24.5px;
   }
   
   #kuliner.card {
@@ -560,6 +570,9 @@
 
 
   /* aside */
+  aside {
+    font-size: 15px;
+  }
   aside figure {
     display: flex;
     flex-direction: column;
@@ -583,7 +596,7 @@
   /* footer */
   footer p{
     align-self: center;
-    font-size: 12px;
+    font-size: 15px;
   }
   /* footer end */
 }
