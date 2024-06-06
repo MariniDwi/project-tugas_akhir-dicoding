@@ -511,7 +511,7 @@
 
   .beranda .beranda-text {
     order: 2;
-
+    padding-left: 7px;
   }
 
   .beranda .beranda-img img {
