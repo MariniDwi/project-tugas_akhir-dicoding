@@ -251,6 +251,10 @@
   .menu-toggle {
     display: none;
   }
+
+  #sejarah p,ul {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 768px) {
   /* navbar */

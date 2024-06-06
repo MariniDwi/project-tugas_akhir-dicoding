@@ -252,6 +252,10 @@
   .menu-toggle {
     display: none;
   }
+
+  #geografis p,ul {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 768px) {
   /* navbar */
