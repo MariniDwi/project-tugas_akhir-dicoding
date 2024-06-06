@@ -500,7 +500,7 @@
 
   .beranda .beranda-text {
     font-family: "Kurale", serif;
-    padding: 8px 20px;
+    padding: 8px 30px;
     max-width: 600px;
   }
 
@@ -513,16 +513,12 @@
   }
 
   .beranda .beranda-img img {
-    width: 100%;
-    margin-left: 35px;
+    width: 90%;
+    margin: auto;
   }
 
-  .beranda .beranda-text h1 {
+  .beranda .beranda-text h1, p {
     text-align: left;
-  }
-
-  .beranda .beranda-text p {
-    text-align: center;
   }
 
   .beranda .beranda-text p {
