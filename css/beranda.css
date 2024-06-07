@@ -175,6 +175,7 @@
     font-family: "Spectral", serif;
     text-align: center;
     padding: 30px;
+    font-size: 15px;
   }
 /* footer */
 
@@ -532,7 +533,7 @@
   /* footer */
   footer p{
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
   }
   /* footer */
 }
@@ -640,7 +641,7 @@
   /* footer */
   footer p{
     align-self: center;
-    font-size: 12px;
+    font-size: 15px;
   }
   /* footer end */
 }
